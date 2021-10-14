@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.clr{
+    clear: both;
+}
+img{
+    width: 100%;
+}
+/* nav-bar*/
+.ico-flat a {
+    color: #ff003c;
+    padding: 10px;
+}
+.navbar-nav{
+    margin: auto;
+}
+.colume-icon-right-md{
+    visibility:hidden;
+}
+.nav-item a{
+    font-weight: 400;
+    font-family: 'Josefin Sans';
+    color: black !important;
+}
+.nav-item a:hover{
+    color: #ff003c !important;
+    background: transparent;
+}
+.nav-item {
+    padding: 20px 0px ;
+    margin-left: 40px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+    border-top: 1px solid red;
+    border-radius: 7px 7px 3px 3px;
+}
+.dropdown-menu a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.hot{
+    position: relative;
+}
+.hot::before{
+    content: "Hot";
+    position: absolute;
+    color: white;
+    border-radius: 7px;
+    right:-14px;
+    top: 12px;
+    background-color: #ff003c;
+    padding: 2px 6px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 10px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+/* show in the screen small*/
+/* banner-header*/
+.header{
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+.text h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 85px;
+    color: #0b1c39;
+    line-height: none;
+    margin-bottom: 20px;
+}
+.text p{
+    color: black;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.text{
+    padding-top: 40%;
+}
+.shop{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 0px;
+    font-size: 30px;
+    margin-top: 20px;
+   padding: 10px 30px;
+   background-color: rgb(187, 187, 187);
+   color: #0b1c39;
+   text-align: center;
+   position: relative;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+/*new-arrivals*/
+.new-arrivals{
+    padding: 10% 0px;
+}
+.new-arrivals h1{
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.new-product{
+    overflow: hidden;
+}
+.new-product img {
+    transition: all 0.5s;
+}
+.new-product:hover img{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.new-arrivals h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#444444;
+    padding: 40px 0px 10px 0px ;
+}
+.new-arrivals p{
+    color: #ff003c;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+/*photo-col*/
+.gallery1{
+    background-image: url(../photo/gallery1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 660px;
+    transition: all 0.9s;
+}
+.photo-col{
+    overflow: hidden;
+}
+.gallery:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.gallery2{
+    background-image: url(../photo/gallery2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+.gallery3{
+    background-image: url(../photo/gallery3.png);
+    height: 315px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.gallery4{
+    background-image: url(../photo/gallery4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 315px;
+
+}
+/*Popular-Items*/
+.Popular-Items{
+    padding: 10% 0px;
+}
+.img-items{
+    border-bottom: 3px solid #ff003c ;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.icon-items{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    visibility: hidden;
+    transition:  .1s;
+}
+.cart-box{
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    visibility: hidden;
+    transition:  .4s;
+    
+}
+.cart-box span{
+    padding: 20px 0px;
+    background-color: #ff003c;
+    color: white;
+    display: block;
+}
+.img-items:hover .cart-box{
+    visibility: visible;
+    transition: all 0.9s;
+    transform: translateY(-50%);
+} 
+.img-items:hover .icon-items{
+    visibility: visible;
+    transition: all 0.9s;
+}
+.Popular-Items h3{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 20px;
+}
+.Popular-Items p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ff003c;
+    padding-bottom: 20px;
+}
+.view{
+    margin-top: 15px;
+    font-size: 21px;
+}
+/*video*/
+.video{
+    background-image: url(../photo/sectin_video.png);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.play{
+    font-size: 90px;
+    color: white;
+}
+.play:hover{
+    color: #a8a8a8;
+    transition: all .3s;
+}
+.color-space{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: px;
+}
+/*watch-choice*/
+.watch-choice{
+    padding: 10% 0px 0% 0px;
+}
+.text-watch{
+    width: 100%;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+}
+.text-watch h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/**bord-red**/
+.kol {
+    font-size: 40px;
+    margin: 20px 0px 0px 20px;
+    color: white;
+}
+.c-card{
+    border: none;
+    background-color: #ff0000 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 0px;
+}
+.card-body h5{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.card-body p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(189, 189, 189);
+}
+/*footer*/
+.card-group{
+    padding: 10% 0px;
+}
+.logo-footer{
+    width: 120px;
+    padding-bottom: 15px;
+}
+.footer-card p{
+    color: #a1a1a1;
+    line-height: 40px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #a1a1a1;
+    line-height: 40px;
+}
+.footer ul li  :hover{
+    color: #ff003c;
+}
+.footer li{
+    list-style-type:none;
+}
+.fa-heart{
+    color: #ff0000;
+}
+.footer-card{
+    background-color: transparent;
+    border: 0px;
+}
+/*end*/
+.end{
+    padding-top: 8%;
+}
+.icon-s{
+    margin:0px 5px ;
+}
+.icon-s:hover{
+    transform: rotatey(180deg);
+    transition: all 0.4s;
+    color: #ff003c;
+}
+/*media-screen*/
+@media   (max-width:768px) {    
+    .text h1{
+        font-size: 30px;
+    }
+    .text p{
+        font-weight: 500;
+    }
+    .hot::before{
+        visibility:hidden ;
+    }
+    .ico-flat{
+        visibility: hidden;
+    }
+    .ico-flat-doo{
+        visibility: visible;
+    }
+
+    }
+ @media (max-width:414px){
+    .watch{
+        display: none;
+    }
+    .text h1{
+        font-size: 60px;
+    }
+    .text{
+        margin-top: -20%;
+        margin-bottom: 20%;
+    }
+    .span-icons{
+        margin-bottom: 5%;
+    }
+
+
+    
+}
+/*page-product-details*/
+.banner{
+    background-image: url(../photo/details/about_hero.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1{
+    font-size: 65px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #0b1c39;
+    position: absolute;
+    top: 50%;
+    transform: scale(50%,50%);
+}
+/*Add to Cart*/
+.text-Foam{
+    padding-top: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+} 
+.box-text-to-cart{
+    display:block;
+    padding: px 0px; /* i dont remmber, what about this? i wish to review it. */
+}
+.prudect{
+    border: 1px solid rgb(58, 58, 58);
+    padding: 0px 10px;
+    display: inline-block;
+}
+.number1{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: #444444;
+    color: white;
+}
+.prudect input{
+    border: 1px solid rgb(61, 61, 61);
+}
+.btn-add-to{
+    background-color: #0b1c39;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+}
+.btn-add-to:hover{
+    background-color: transparent;
+    border: 1px solid red;
+    color: #ff003c;
+}
+
+/*Get-promotions****finshed*/
+.Get-promotions{
+    padding: 200px 0px;
+    background-color:  #191d34;
+    color: white;
+}
+.form-class{
+   position: relative;
+}
+.email{
+    border: 1px solid #fff;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    padding: 19px 20px;
+    line-height: 20px;
+    position: relative;
+}
+.sub{
+    padding: 15px 30px;
+    line-height: 16px;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    background-color: #115ada;
+    color: white;
+    border: none ;
+}
+.text-email-data h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text-email-data p{
+    padding: 20px 0px;
+}
+/*product-details-footer*/
+.product-details-footer{
+    padding: 70px 0px 0px 0px;
+}
+/*page-login*/
+/* new-and-welcome*/
+.color{
+    background-color:  #7e5b7b;
+   padding: 40% 10%;
+}
+.Welcome-Back {
+    padding: 10% 10%;
+}
+.color h3{
+    color: #ffffff;
+    padding: 0px 0px 10px 0px;
+}
+.color p{
+    color: #ffffff;
+}
+.new-and-welcome h3{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.form-box{
+    padding: 40px 0px;
+}
+.form-user{
+    border: 0px solid transparent;
+    border-bottom: 1px solid rgb(143, 143, 143);
+}
+.form-user input{
+    outline: none;
+    border: 0px !important;
+    padding: 15px 0px;
+}
+.remmber input{
+    margin: 20px 10px 0px 0px;
+}
+.login{
+    border: 1px solid rgb(44, 160, 255);
+    color:rgb(44, 160, 255) ;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+.login:hover{
+    background-color:rgb(44, 160, 255) ;
+    transition: 0.6s;
+}
+.log-in{
+    border: 1px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255) ;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.log-in:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: #ff0000;
+    transition: 0.6s;
+}
+.forget a{
+    position: absolute;
+    right: 10px;
+    color:rgb(110, 110, 110) ;
+    padding: 10px 0px;
+    text-decoration: none;
+    list-style: none;
+}
+/*page-about Us*/
+.text-container{
+    padding: 20px 0px;
+}
+.text-container h2{
+    padding:0px 0px 20px 70px;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text-container h2::before{
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 3px;
+    background-color: #eb566c;
+    left: 0;
+    top: 15px;
+}
+.text-container p{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(66, 66, 66) ;
+}
+.Our-Vision{
+    padding: 10% 0px;
+}
+/*page blog*/
+.blog-left-one{
+    padding: 0px 0px;
+    box-shadow: 0px 9px 40px rgb(0 0 0 / 5% );
+}
+.img-one{
+    position: relative;
+}
+.data-img-one{
+    position: absolute;
+    bottom: -20px;
+    left: 35px;
+    display: block;
+    color: #fff;
+    background-color: #ff2020;
+    padding: 10px 35px;
+    border-radius: 5px;
+    text-align: center;
+}
+.data-t{
+    margin: 10% 0px;
+}
+.data-t ul li{
+    display: inline-block;
+}
+.blog-left a:hover,.data-t h2:hover {
+    text-decoration: none;
+    color: #ff0000 !important;
+    background-color:transparent;
+}
+.data-t h2{
+    color: mediumvioletred ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.center-1{
+background-color: #000000;
+padding: 7px 1px;
+display: inline-block;
+border-radius: 5px;
+margin: 0px 8px;
+}
+.comment a{
+    color: mediumvioletred !important;
+}
+.comment{
+    padding: 10px 0px 30px 0px;
+}
+.data-t{
+    
+    margin-left: 20px;
+}
+.kimo{
+    padding: 10px 0px;
+    background-color: #000000;
+}
+/*blog-right*/
+.blog-right{
+    padding: 30px;
+    background-color: #e9e9e9;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.box-search-blog{
+    width: 100%;
+    position: relative;
+    height: 50px;
+}
+.fal-search{
+    position: absolute;
+    right: 60px;
+    height: 50px;
+}
+.search-keyword{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ff0000;
+    margin-top: 10px ;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    border-radius: 0px ;
+}
+.search-keyword:hover{
+    color: #000000;
+    border: 1px solid red;
+    background-color: transparent;
+}
+.blog-right li{
+    list-style: none;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 10px;
+    margin:30px 0px ;
+}
+.blog-right a {
+    color: #646464;
+}
+.blog-right h3 {
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 10px;
+}
+/*blog right box photo*/
+.blog-right-box{
+    padding: 40px 10px;
+    background-color: #e9e9e9;
+} 
+.blog-right-box h3{
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px  solid #b9b9b9;
+} 
+.card{
+    background-color: transparent;
+    list-style: none;
+} 
+.card li{
+    list-style: none;
+}
+.card h6 a{
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+.card p a{
+    color: #868686;
+    font-size: 13px;
+}
+.images-card{
+    border: 0px;
+}
